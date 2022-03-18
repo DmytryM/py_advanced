@@ -6,6 +6,7 @@
 программы должно быть "делится" (если функция func() вернула True) и "не делится"
 (если функция func() вернула False).'''
 
+
 # объявление функции
 # def func(num1, num2):
 #     return num1 % num2 == 0
@@ -23,5 +24,6 @@
 # 2.0
 def func(num1, num2):
     return num1 % num2 == 0
+
 
 print("делится" if func(int(input()), int(input())) else "не делится")
