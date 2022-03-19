@@ -80,20 +80,20 @@
 '''Напишите программу для определения, является ли число произведением двух чисел из данного набора, выводящую 
 результат в виде ответа «ДА» или «НЕТ».'''
 
-amount = int(input())
-l = []
-res = 1
-for i in range(amount):
-    l.append(int(input()))
-
-res_supposed = int(input())
-for i in l:
-    res *= i
-print(res)
-if res == res_supposed:
-    print("ДА")
-else:
-    print("НЕТ")
+# amount = int(input())
+# l = []
+# res = 1
+# for i in range(amount):
+#     l.append(int(input()))
+#
+# res_supposed = int(input())
+# for i in l:
+#     res *= i
+# print(res)
+# if res == res_supposed:
+#     print("ДА")
+# else:
+#     print("НЕТ")
 
 # ---------------- 7 --------------------
 
@@ -160,3 +160,41 @@ else:
 #         if len(y) > length:
 #             length = len(y)
 # print(length)
+
+
+# ---------------- 10 --------------------
+
+'''Искусственный интеллект Антон, созданный Гилфойлом, взломал сеть умных холодильников. Теперь он использует их в качестве 
+серверов "Пегого дудочника". Помогите владельцу фирмы отыскать все зараженные холодильники.
+Для каждого холодильника существует строка с данными, состоящая из строчных букв и цифр, и если в ней присутствует слово 
+"anton" (необязательно рядом стоящие буквы, главное наличие последовательности букв), то холодильник заражен и нужно вывести номер 
+холодильника, нумерация начинается с единицы'''
+
+a = int(input())
+l = []
+res = []
+res2 = []
+cond = ["a","n","t","o","n"]
+res3 = []
+clean_list = []
+for i in range(a):
+    l.append(input())
+
+for i in l:
+    for y in i:
+        if y in cond:
+            res.append(y)
+    myString = ''.join(res)
+    res2.append(myString)
+    res = []
+
+
+
+
+for i in range(len(res2)):
+    if res2[i] == "anton":
+        res3.append(i + 1)
+
+print(*res3)
+print(res2)
+print(l)
