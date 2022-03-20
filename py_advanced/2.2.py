@@ -170,31 +170,44 @@
 "anton" (необязательно рядом стоящие буквы, главное наличие последовательности букв), то холодильник заражен и нужно вывести номер 
 холодильника, нумерация начинается с единицы'''
 
-a = int(input())
-l = []
-res = []
-res2 = []
-cond = ["a","n","t","o","n"]
-res3 = []
-clean_list = []
-for i in range(a):
-    l.append(input())
+# a = int(input())
+# l = []
+# res = []
+# res2 = []
+# cond = ["a","n","t","o","n"]
+# res3 = []
+# clean_list = []
+# for i in range(a):
+#     l.append(input())
+#
+# for i in l:
+#     for y in i:
+#         if y in cond:
+#             res.append(y)
+#     myString = ''.join(res)
+#     res2.append(myString)
+#     res = []
+#
+#
+#
+#
+# for i in range(len(res2)):
+#     if res2[i] == "anton":
+#         res3.append(i + 1)
+#
+# print(*res3)
+# print(res2)
+# print(l)
 
-for i in l:
-    for y in i:
-        if y in cond:
-            res.append(y)
-    myString = ''.join(res)
-    res2.append(myString)
-    res = []
+
+# ---------------- 10 --------------------
+
+'''Необходимо написать программу, реализующую алгоритм написания этой песни. Алгоритм выводит в конце предложения 
+следующую в алфавитном порядке букву, если она встречается в строке текста, а очередную строку отображает уже без этой буквы.'''
 
 
+word = input() + ' запретил букву'
+b = ['а', 'б', 'в', 'г', 'д', 'е', 'ж', 'з', 'и', 'й', 'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'ъ', 'ы', 'ь', 'э', 'ю', 'я']
 
-
-for i in range(len(res2)):
-    if res2[i] == "anton":
-        res3.append(i + 1)
-
-print(*res3)
-print(res2)
-print(l)
+for i in b:
+    if i in word:
