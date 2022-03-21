@@ -178,35 +178,23 @@
 "anton" (необязательно рядом стоящие буквы, главное наличие последовательности букв), то холодильник заражен и нужно вывести номер 
 холодильника, нумерация начинается с единицы'''
 
-# a = int(input())
-# l = []
-# res = []
-# res2 = []
-# cond = ["a","n","t","o","n"]
-# res3 = []
-# clean_list = []
-# for i in range(a):
-#     l.append(input())
-#
-# for i in l:
-#     for y in i:
-#         if y in cond:
-#             res.append(y)
-#     myString = ''.join(res)
-#     res2.append(myString)
-#     res = []
-#
-#
-#
-#
-# for i in range(len(res2)):
-#     if res2[i] == "anton":
-#         res3.append(i + 1)
-#
-# print(*res3)
-# print(res2)
-# print(l)
+a = int(input())
+l = []
+res = []
+cond = ["a","n","t","o","n"]
+for i in range(a):
+    l.append(input())
 
+for i in range(len(l)):
+    First = l[i].find("a")
+    Second = l[i].find("n", First)
+    Third = l[i].find("t", Second)
+    Forth = l[i].find("o", Third)
+    Fifth = l[i].find("n", Forth)
+    # print(First,Second,Third,Forth,Fifth)
+    if(First < Second < Third < Forth < Fifth):
+        res.append(i + 1)
+print(*res)
 
 # ---------------- 10 --------------------
 
