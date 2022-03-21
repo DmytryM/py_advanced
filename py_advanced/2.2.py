@@ -80,18 +80,26 @@
 '''Напишите программу для определения, является ли число произведением двух чисел из данного набора, выводящую 
 результат в виде ответа «ДА» или «НЕТ».'''
 
-# amount = int(input())
+# a = int(input())
 # l = []
-# res = 1
-# for i in range(amount):
+# res = []
+# for i in range(a):
 #     l.append(int(input()))
-#
 # res_supposed = int(input())
-# for i in l:
-#     res *= i
+# # print(l)
+# for i in range(0, len(l) - 1):
+#     for y in range(1, (len(l))):
+#         if i != y:
+#             res.append(l[i]*l[y])
+#         else:
+#             pass
+# print(res_supposed)
 # print(res)
-# if res == res_supposed:
-#     print("ДА")
+#
+# for i in res:
+#     if int(i) == res_supposed:
+#         print("ДА")
+#         break
 # else:
 #     print("НЕТ")
 
