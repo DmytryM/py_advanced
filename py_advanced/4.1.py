@@ -33,7 +33,8 @@ list1 = ['a', 'b', ['c', ['d', 'e', ['f', 'g', 'h', 'i', 'j'], 'k'], 'l'], 'm', 
 list1 = [[1, 7, 8], [9, 7, 102], [6, 106, 105], [100, 99, 98, 103], [1, 2, 3]]
 maximum = -1
 for i in list1:
-    max()
+    if maximum < max(i):
+        maximum = max(i)
 
 
 print(maximum)
