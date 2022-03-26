@@ -47,8 +47,37 @@
 
 my_list = []
 a = []
+res = []
 
 elem = [i for i in input().split()]
 my_list.extend(elem)
 
-print(my_list)
+# пробегаем по списку всех элементов
+for i in range(len(my_list)):
+    for j in range(i, len(my_list)):
+        if my_list[i] == my_list[j]:
+            a.extend(my_list[j])
+        else:
+            pass
+    print(a)
+    res.append(list(a))
+    a[:] = []
+print(res)
+
+
+
+# ---------------- 5 --------------------
+
+
+'''На вход программе подаются две строки, на одной символы, на другой число nn. Из первой строки формируется список.
+
+Реализуйте функцию chunked(), которая принимает на вход список и число, задающее размер чанка (куска), а возвращает список из чанков указанной длины.'''
+
+# my_list = []
+# elem = [i for i in input().split()]
+# my_list.extend(elem)
+# res = []
+# chunk = int(input())
+#
+# for i in range(len(elem)):
+#     res.append()
