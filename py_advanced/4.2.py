@@ -44,30 +44,23 @@
 '''На вход программе подается строка текста, содержащая символы. Напишите программу, которая упаковывает
 последовательности одинаковых символов заданной строки в подсписки.'''
 
-
-my_list = []
-a = []
-res = []
-
-elem = [i for i in input().split()]
-my_list.extend(elem)
-
-# пробегаем по списку всех элементов
-for i in range(len(my_list)):
-    for j in range(i, len(my_list)):
-        if my_list[i] == my_list[j]:
-            a.extend(my_list[j])
-        else:
-            pass
-    print(a)
-    res.append(list(a))
-    a[:] = []
-print(res)
-
-
+# char_list = []
+# elem = [i for i in input().split()]
+# a = []
+# for i in elem:
+#     if not a:
+#         a.append(i)
+#     else:
+#         if a[-1] == i:
+#             a.append(i)
+#         else:
+#             char_list.append(a)
+#             a = []
+#             a.append(i)
+# char_list.append(a)
+# print(char_list)
 
 # ---------------- 5 --------------------
-
 
 '''На вход программе подаются две строки, на одной символы, на другой число nn. Из первой строки формируется список.
 
