@@ -67,26 +67,26 @@
 Реализуйте функцию chunked(), которая принимает на вход список и число, задающее размер чанка (куска), а возвращает список из чанков указанной длины.'''
 
 
-def chunked(elem, chunk):
-    char_list = []
-    a = []
-    for char in elem:
-        if not a:
-            a.append(char)
-        else:
-            if len(a) < chunk:
-                a.append(char)
-            else:
-                char_list.append(a)
-                a = [char]
-    char_list.append(a)
-    return char_list
-
-
-elem = [i for i in input().split()]
-chunk = int(input())
-
-print(chunked(elem, chunk))
+# def chunked(elem, chunk):
+#     char_list = []
+#     a = []
+#     for char in elem:
+#         if not a:
+#             a.append(char)
+#         else:
+#             if len(a) < chunk:
+#                 a.append(char)
+#             else:
+#                 char_list.append(a)
+#                 a = [char]
+#     char_list.append(a)
+#     return char_list
+#
+#
+# elem = [i for i in input().split()]
+# chunk = int(input())
+#
+# print(chunked(elem, chunk))
 
 
 # ---------------- 6 --------------------
@@ -98,5 +98,16 @@ print(chunked(elem, chunk))
 На вход программе подается строка текста, содержащая символы. Из данной строки формируется список. Напишите программу, 
 которая выводит список, содержащий все возможные подсписки списка, включая пустой список.'''
 
+
+elem = [i for i in input().split()]
+
+res = [[]]
+addition = []
+for i in range(len(elem)):
+    for j in range(len(elem)):
+        addition = elem[j:i + j + 1]
+        if len(addition) == i + 1:
+            res.append(addition)
+print(res)
 
 
