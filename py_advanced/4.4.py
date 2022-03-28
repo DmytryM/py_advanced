@@ -5,11 +5,30 @@
 строки, затем второй, и т.д.Напишите программу, которая сначала считывает элементы матрицы один за другим, затем выводит
 их в виде матрицы.'''
 
+# a, b = int(input()), int(input())
+#
+# res = [[input() for _ in range(b)] for _ in range(a)]
+#
+# for row in res:            # делаем перебор всех строк матрицы A
+#     for elem in row:     # перебираем все элементы в строке row
+#         print(elem, end = ' ')
+#     print()
+
+
+# ---------------- 2 --------------------
+
 a, b = int(input()), int(input())
 
 res = [[input() for _ in range(b)] for _ in range(a)]
 
 for row in res:            # делаем перебор всех строк матрицы A
     for elem in row:     # перебираем все элементы в строке row
+        print(elem, end = ' ')
+    print()
+
+print()
+
+for col in res:            # делаем перебор всех строк матрицы A
+    for elem in col:     # перебираем все элементы в строке row
         print(elem, end = ' ')
     print()
