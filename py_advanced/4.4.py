@@ -17,18 +17,28 @@
 
 # ---------------- 2 --------------------
 
-a, b = int(input()), int(input())
 
-res = [[input() for _ in range(b)] for _ in range(a)]
+def matrix():  # matrix() обрабатывает вводимые данные и преобразует их в матрицу
+    matrix, rows, cols = [], int(input()), int(input())
+    matrix = [[input() for _ in range(cols)] for _ in range(rows)]
+    return matrix, rows, cols
 
-for row in res:            # делаем перебор всех строк матрицы A
-    for elem in row:     # перебираем все элементы в строке row
-        print(elem, end = ' ')
-    print()
 
+def print_matrix(matrix, rows, cols):  # вывод матрицы
+    for i in range(rows):
+        for j in range(cols):
+            print(matrix[i][j], end=" ")
+        print()
+
+
+def print_matrix_t(matrix, rows, cols):  # вывод транспонирования матрицы
+    for j in range(cols):
+        for i in range(rows):
+            print(matrix[i][j], end=" ")
+        print()
+
+
+matrix, rows, cols = matrix()
+print_matrix(matrix, rows, cols)
 print()
-
-for col in res:            # делаем перебор всех строк матрицы A
-    for elem in col:     # перебираем все элементы в строке row
-        print(elem, end = ' ')
-    print()
+print_matrix_t(matrix, rows, cols)
