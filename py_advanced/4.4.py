@@ -68,21 +68,52 @@
 '''Напишите программу, которая выводит количество элементов квадратной матрицы в каждой строке, больших среднего 
 арифметического элементов данной строки.'''
 
+# a = int(input())
+# res = [input().split() for _ in range(a)]
+# res1 = []
+# sum = 0
+# amount = 0
+# for i in range(a):
+#     for j in range(a):
+#         sum += int(res[i][j])
+#     res1.append(sum / len(res[i]))
+#     # print(sum/len(res[i]))
+#     sum = 0
+#
+# for i in range(a):
+#     for j in range(a):
+#         if int(res[i][j]) > int(res1[i]):
+#             amount += 1
+#     print(amount)
+#     amount = 0
+
+# ---------------- 5 --------------------
+
+'''Напишите программу, которая выводит максимальный элемент в заштрихованной области квадратной матрицы.'''
+
+# a = int(input())
+# res = [input().split() for _ in range(a)]
+# res2 = []
+#
+# for i in range(a):
+#     for j in range(0, i + 1):
+#         res2.append(int(res[i][j]))
+# print(max(res2))
+
+# ---------------- 6 --------------------
+
+'''Напишите программу, которая выводит максимальный элемент в заштрихованной области квадратной матрицы.'''
+
 a = int(input())
 res = [input().split() for _ in range(a)]
-res1 = []
-sum = 0
-amount = 0
-for i in range(a):
-    for j in range(a):
-        sum += int(res[i][j])
-    res1.append(sum / len(res[i]))
-    # print(sum/len(res[i]))
-    sum = 0
+res2 = []
 
 for i in range(a):
     for j in range(a):
-        if int(res[i][j]) > int(res1[i]):
-            amount += 1
-    print(amount)
-    amount = 0
+        if(i < j and i < a - 1 - j) or (i > j and i > a - 1 - j):
+            pass
+        else:
+            res2.append(int(res[i][j]))
+
+print(max(res2))
+
