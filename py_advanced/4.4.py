@@ -49,15 +49,40 @@
 '''Следом квадратной матрицы называется сумма элементов главной диагонали. Напишите программу, которая выводит след 
 заданной квадратной матрицы'''
 
-a = int(input())
-# res = []
-# res1 = 0
-# res2 = 0
-# for i in range(a):
-#     res.append(input().split())
-#     res2 += int(res[i][i])
+# a = int(input())
+# # res = []
+# # res1 = 0
+# # res2 = 0
+# # for i in range(a):
+# #     res.append(input().split())
+# #     res2 += int(res[i][i])
+# #
+# # print(res2)
 #
-# print(res2)
+# res = [input().split() for _ in range(a)]
+# print(sum([int(res[i][i]) for i in range(a)]))
 
+
+# ---------------- 4 --------------------
+
+'''Напишите программу, которая выводит количество элементов квадратной матрицы в каждой строке, больших среднего 
+арифметического элементов данной строки.'''
+
+a = int(input())
 res = [input().split() for _ in range(a)]
-print(sum([int(res[i][i]) for i in range(a)]))
+res1 = []
+sum = 0
+amount = 0
+for i in range(a):
+    for j in range(a):
+        sum += int(res[i][j])
+    res1.append(sum / len(res[i]))
+    # print(sum/len(res[i]))
+    sum = 0
+
+for i in range(a):
+    for j in range(a):
+        if int(res[i][j]) > int(res1[i]):
+            amount += 1
+    print(amount)
+    amount = 0
