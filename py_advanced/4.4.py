@@ -18,27 +18,46 @@
 # ---------------- 2 --------------------
 
 
-def matrix():  # matrix() обрабатывает вводимые данные и преобразует их в матрицу
-    matrix, rows, cols = [], int(input()), int(input())
-    matrix = [[input() for _ in range(cols)] for _ in range(rows)]
-    return matrix, rows, cols
+# def matrix():  # matrix() обрабатывает вводимые данные и преобразует их в матрицу
+#     matrix, rows, cols = [], int(input()), int(input())
+#     matrix = [[input() for _ in range(cols)] for _ in range(rows)]
+#     return matrix, rows, cols
+#
+#
+# def print_matrix(matrix, rows, cols):  # вывод матрицы
+#     for i in range(rows):
+#         for j in range(cols):
+#             print(matrix[i][j], end=" ")
+#         print()
+#
+#
+# def print_matrix_t(matrix, rows, cols):  # вывод транспонирования матрицы
+#     for j in range(cols):
+#         for i in range(rows):
+#             print(matrix[i][j], end=" ")
+#         print()
+#
+#
+# matrix, rows, cols = matrix()
+# print_matrix(matrix, rows, cols)
+# print()
+# print_matrix_t(matrix, rows, cols)
 
 
-def print_matrix(matrix, rows, cols):  # вывод матрицы
-    for i in range(rows):
-        for j in range(cols):
-            print(matrix[i][j], end=" ")
-        print()
+# ---------------- 3 --------------------
 
+'''Следом квадратной матрицы называется сумма элементов главной диагонали. Напишите программу, которая выводит след 
+заданной квадратной матрицы'''
 
-def print_matrix_t(matrix, rows, cols):  # вывод транспонирования матрицы
-    for j in range(cols):
-        for i in range(rows):
-            print(matrix[i][j], end=" ")
-        print()
+a = int(input())
+# res = []
+# res1 = 0
+# res2 = 0
+# for i in range(a):
+#     res.append(input().split())
+#     res2 += int(res[i][i])
+#
+# print(res2)
 
-
-matrix, rows, cols = matrix()
-print_matrix(matrix, rows, cols)
-print()
-print_matrix_t(matrix, rows, cols)
+res = [input().split() for _ in range(a)]
+print(sum([int(res[i][i]) for i in range(a)]))
