@@ -15,7 +15,6 @@
 
 '''Поиск через рекурсию'''
 
-
 # def bsearch(list, idx0, idxn, val):
 #     if idxn < idx0:
 #         return None
@@ -41,10 +40,65 @@
 '''На вход программе подаются два натуральных числа nn и mm — количество строк и столбцов в матрице, затем nn строк по 
 mm целых чисел в каждой, отделенных символом пробела.'''
 
-a, b = int(input()), int(input())
-
-res = [[input() for _ in range(b)] for _ in range(a)]
-
-print(res)
+# a, b = int(input()), int(input())
+#
+# # в первой строке ввода идёт количество строк массива
+# res = [[int(j) for j in input().split()] for i in range(a)]
+#
+# maxRes = res[0][0]
+# maxX, maxY = 0, 0
+#
 # for i in range(a):
 #     for j in range(b):
+#         if maxRes < res[i][j]:
+#             maxX, maxY = i, j
+#
+# print(maxX, maxY)
+
+# class matrix:
+#     def __init__(self, n=0, m=0):
+#         self.n = n
+#         self.m = m
+#         self.matrix = []
+#
+#     def minput(self):
+#         self.n = int(input())
+#         self.m = int(input())
+#         for i in range(self.n):
+#             self.matrix.append([int(elem) for elem in input().split()])
+#
+#     def maximum_in_the_table(self):
+#         maximum = self.matrix[0][0]
+#         max_i, max_j = 0, 0
+#         for i in range(self.n):
+#             for j in range(self.m):
+#                 if maximum < self.matrix[i][j]:
+#                     maximum = self.matrix[i][j]
+#                     max_i, max_j = i, j
+#         return max_i, max_j
+#
+#
+# if __name__ == "__main__":
+#     mult = matrix()
+#     mult.minput()
+#     print(*mult.maximum_in_the_table())
+
+
+# ---------------- 3 --------------------
+
+'''Напишите программу, которая меняет местами столбцы в матрице.'''
+
+# a, b = int(input()), int(input())
+#
+# res = [[int(j) for j in input().split()] for i in range(a)]
+#
+# first, second = [int(_) for _ in input().split()]  # '0 1'  =>  [0, 1]
+#
+# for j in range(a):
+#     res[j][first], res[j][second] = res[j][second], res[j][first]
+#
+# for line in res:
+#     print(*line)
+
+
+# ---------------- 4 --------------------
