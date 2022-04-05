@@ -119,5 +119,6 @@ n = int(input())
 matrix = [[int(j) for j in input().split()] for _ in range(n)]
 
 for i in range(n):
-    for j in range(n):
+    matrix[i][i], matrix[n - i - 1][i] = matrix[n - i - 1][i], matrix[i][i]
 
+[print(*res) for res in matrix]
