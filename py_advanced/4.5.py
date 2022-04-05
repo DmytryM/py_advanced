@@ -115,10 +115,24 @@ mm целых чисел в каждой, отделенных символом 
 диагонали, при этом каждый элемент должен остаться в том же столбце (то есть в каждом столбце нужно поменять местами 
 элемент на главной диагонали и на побочной диагонали).'''
 
+# n = int(input())
+# matrix = [[int(j) for j in input().split()] for _ in range(n)]
+#
+# for i in range(n):
+#     matrix[i][i], matrix[n - i - 1][i] = matrix[n - i - 1][i], matrix[i][i]
+#
+# [print(*res) for res in matrix]
+
+# ---------------- 6 --------------------
+
+'''Дана квадратная матрица чисел. Напишите программу, которая зеркально отображает её 
+элементы относительно горизонтальной оси симметрии.'''
+
 n = int(input())
+
 matrix = [[int(j) for j in input().split()] for _ in range(n)]
 
-for i in range(n):
-    matrix[i][i], matrix[n - i - 1][i] = matrix[n - i - 1][i], matrix[i][i]
+for i in range(n - 1, -1, -1):
+    print(*matrix[i])
 
-[print(*res) for res in matrix]
+
