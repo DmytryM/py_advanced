@@ -172,16 +172,36 @@ mm целых чисел в каждой, отделенных символом 
 2, 3, \ldots, n^21,2,3,…,n 2 так, что суммы по каждому столбцу, каждой строке и каждой из двух диагоналей равны между 
 собой. Напишите программу, которая проверяет, является ли заданная квадратная матрица магическим квадратом.'''
 
-n = int(input())
-matrix = [[int(j) for j in input().split()] for _ in range(n)]
-ls = []
-res = "YES"
-for i in range(n):
-    for j in range(n):
-        ls.append(matrix[i][j])
 
-for i in range(1, n**2+1):
-    if i in ls:
-        res = "NO"
-print(res)
-print(ls)
+def magic_square():
+    n = int(input())
+    matrix = [[int(j) for j in input().split()] for _ in range(n)]
+    check = []
+    res = "YES"
+    for i in range(n):  # заполняем проверочный список всеми элементами матрицы
+        check += matrix[i]
+
+    for i in range(1, len(check) + 1):  # проверяем проверочный список на наличие всех чисел в промежутке от 1 до n ** 2
+        if i not in check:
+            return print(
+                "NO")  # если нет какого-то числа, то значит дальше нет смысла проверять равенство, завершаем с NO
+    print(matrix)
+    print(res)
+    print(check)
+
+
+magic_square()
+# def is_magic_square(matrix, S, N):
+#     return (all(sum(row) == S for row in matrix)
+#             and all(sum(column) == S for column in zip(*matrix))
+#             and sum(matrix[i][i] for i in range(N)) == S
+#             and sum(matrix[i][N-1-i] for i in range(N)) == S
+#             and set(x for row in matrix for x in row) == set(range(1, N**2 + 1)))
+#
+# N = int(input())  # it is guaranteed to be integer
+# try:
+#     matrix = [list(map(int, input().split())) for _ in range(N)]
+# except ValueError:  # non integer
+#     print('NO')
+# else:
+#     print('YES' if N == 0 or is_magic_square(matrix, sum(matrix[0]), N) else 'NO')
