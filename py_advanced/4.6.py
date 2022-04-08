@@ -11,12 +11,24 @@ mn×m, заполнив её символами . и * в шахматном п�
 
 # ---------------- 2 --------------------
 
-a = int(input())
+# a = int(input())
+#
+# for i in range(a):  # заполняем главную диагональ единицами, а побочную двойками
+#     # matrix[i][a - i - 1] = 1
+#     # for j in range(a):
+#     #     if i > a - 1 - j:
+#     #         matrix[i][j] = 2
+#     matrix = [0 if i < a - 1 - j else 1 if i == a - 1 - j else 2 for j in range(a)]
+#     print(*matrix)
 
-for i in range(a):  # заполняем главную диагональ единицами, а побочную двойками
-    # matrix[i][a - i - 1] = 1
-    # for j in range(a):
-    #     if i > a - 1 - j:
-    #         matrix[i][j] = 2
-    matrix = [0 if i < a - 1 - j else 1 if i == a - 1 - j else 2 for j in range(a)]
+# ---------------- 3--------------------
+
+n, m = map(int, input().split())
+iteration = 1
+for i in range(n):
+    matrix = []
+    for j in range(m):
+        matrix.append(str(iteration).ljust(3))
+        iteration += 1
     print(*matrix)
+
