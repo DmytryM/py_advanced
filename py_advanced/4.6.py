@@ -53,3 +53,7 @@ mn×m, заполнив её символами . и * в шахматном п�
 
 # ---------------- 6 --------------------
 
+n = int(input())
+for i in range(n):
+    matrix = [1 if (i <= j and i <= n - 1 - j) or (i >= j and i >= n - 1 - j) else 0 for j in range(n)]
+    print(*matrix)
