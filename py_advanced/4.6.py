@@ -21,14 +21,28 @@ mn×m, заполнив её символами . и * в шахматном п�
 #     matrix = [0 if i < a - 1 - j else 1 if i == a - 1 - j else 2 for j in range(a)]
 #     print(*matrix)
 
-# ---------------- 3--------------------
+# ---------------- 3 --------------------
 
-n, m = map(int, input().split())
-iteration = 1
-for i in range(n):
-    matrix = []
-    for j in range(m):
-        matrix.append(str(iteration).ljust(3))
-        iteration += 1
-    print(*matrix)
+# n, m = map(int, input().split())
+# iteration = 1
+# for i in range(n):
+#     matrix = []
+#     for j in range(m):
+#         matrix.append(str(iteration).ljust(3))
+#         iteration += 1
+#     print(*matrix)
+
+# ---------------- 4 --------------------
+
+# n, m = map(int, input().split())
+# iteration = 0
+# for i in range(n):
+#     matrix = []
+#     iteration = i + 1
+#     for j in range(m):
+#         matrix.append(str(iteration).ljust(3))
+#         iteration += n
+#     print(*matrix)
+
+# ---------------- 5 --------------------
 
