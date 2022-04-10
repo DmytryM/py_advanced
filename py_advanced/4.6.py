@@ -63,3 +63,20 @@ mn×m, заполнив её символами . и * в шахматном п�
 # n, m = map(int, input().split())
 
 # ---------------- 8 --------------------
+
+# n, m = map(int, input().split())
+# count = 1
+# matrix = [[0 for _ in range(m)] for _ in range(n)]
+# for i in range(n):
+#     for j in range(m):
+#         if i % 2 != 0:
+#             matrix[i][m - 1 - j] = count
+#             count += 1
+#         else:
+#             matrix[i][j] = count
+#             count += 1
+#
+# [print(*res) for res in matrix]
+
+# ---------------- 9 --------------------
+
