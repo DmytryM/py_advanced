@@ -84,3 +84,16 @@ mn×m, заполнив её символами . и * в шахматном п�
 # [print(*res) for res in matrix]
 
 # ---------------- 9 --------------------
+
+n, m = map(int, input().split())
+mat = [[0 for _ in range(m)] for _ in range(n)]
+count = 1
+for x in range(n + m):
+    for i in range(n):
+        for j in range(m):
+            if i + j == x:
+                mat[i][j] = count
+                count += 1
+[print(*res) for res in mat]
+
+# ---------------- 10 --------------------
