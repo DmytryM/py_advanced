@@ -85,15 +85,53 @@ mn×m, заполнив её символами . и * в шахматном п�
 
 # ---------------- 9 --------------------
 
-n, m = map(int, input().split())
-mat = [[0 for _ in range(m)] for _ in range(n)]
-count = 1
-for x in range(n + m):
-    for i in range(n):
-        for j in range(m):
-            if i + j == x:
-                mat[i][j] = count
-                count += 1
-[print(*res) for res in mat]
+# n, m = map(int, input().split())
+# mat = [[0 for _ in range(m)] for _ in range(n)]
+# count = 1
+# for x in range(n + m):
+#     for i in range(n):
+#         for j in range(m):
+#             if i + j == x:
+#                 mat[i][j] = count
+#                 count += 1
+# [print(*res) for res in mat]
 
 # ---------------- 10 --------------------
+
+n, m = map(int, input().split())
+matrix = [[0 for _ in range(m)] for _ in range(n)]
+count = 1
+i, j = 0, -1
+max_j, max_i = m - 1, n - 1
+min_j, min_i = 0, 1
+for iteration in range(n * m):
+    while j < max_j:
+        j += 1
+        matrix[i][j] = count
+        count += 1
+    max_j -= 1
+
+    while i < max_i:
+        i += 1
+        matrix[i][j] = count
+        count += 1
+    max_i -= 1
+
+    while j > min_j:
+        j -= 1
+        matrix[i][j] = count
+        count += 1
+    min_j += 1
+
+    while i > min_i:
+        i -= 1
+        matrix[i][j] = count
+        count += 1
+    min_i += 1
+
+    if j == (n - 1) // 2 and i == n // 2:
+        break
+for i in range(n):
+    for j in range(m):
+        print(str(matrix[i][j]).ljust(3), end=' ')
+    print()

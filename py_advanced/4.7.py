@@ -11,10 +11,18 @@
 
 # ---------------- 2 --------------------
 
-# a, b = map(int, input().split())
-# res1 = [[int(j) for j in input().split()] for i in range(a)]
-#
-# a1, b1 = map(int, input().split())
-# res2 = [[int(j) for j in input().split()] for i in range(a1)]
+a, b = map(int, input().split())
+res1 = [[int(j) for j in input().split()] for i in range(a)]
 
+a1, b1 = map(int, input().split())
+res2 = [[int(j) for j in input().split()] for i in range(a1)]
 
+res3 = []
+result = 0
+for i in range(a):
+    result = i
+    for j in range(b):
+        result *= j
+    res3.append(result)
+
+[print(mat) for mat in res3]
