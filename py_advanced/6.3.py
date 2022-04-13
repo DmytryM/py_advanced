@@ -34,10 +34,16 @@
 
 # ---------------- 5 --------------------
 
-n = int(input())
-pupil = tuple(input().split() for _ in range(n))
-[print(*i) for i in pupil]
-print()
-[print(*i) for i in pupil if int(i[1]) > 3]
+# n = int(input())
+# pupil = tuple(input().split() for _ in range(n))
+# [print(*i) for i in pupil]
+# print()
+# [print(*i) for i in pupil if int(i[1]) > 3]
 
+# ---------------- 6 --------------------
 
+# n = int(input())
+# f1, f2, f3 = 1, 1, 1
+# for i in range(n):
+#     print(f1, end=' ')
+#     f1, f2, f3 = f2, f3, f1 + f2 + f3
