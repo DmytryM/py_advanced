@@ -28,3 +28,18 @@
 #     print()
 
 # ---------------- 3 --------------------
+
+a = int(input())
+res1 = [[int(j) for j in input().split()] for i in range(a)]
+degree = int(input())
+res2 = res1.copy()
+res3 = 0
+for s in range(degree - 1):
+    res3 = [[0 for _ in range(a)] for _ in range(a)]
+    for i in range(a):
+        for j in range(a):
+            for x in range(a):
+                res3[i][j] += res1[i][x] * res2[x][j]
+    res2 = res3.copy()
+
+[print(*res) for res in res3]
