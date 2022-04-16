@@ -78,21 +78,32 @@
 
 # ---------------- 6 --------------------
 
-d = {
-    "1": ".,?!:",
-    "2": "ABC",
-    "3": "DEF",
-    "4": "GHI",
-    "5": "JKL",
-    "6": "MNO",
-    "7": "PQRS",
-    "8": "TUV",
-    "9": "WXYZ",
-    "0": " "
-}
-for letter in input().upper():
-    for key, value in d.items():
-        if letter in value:
-            print(key * (value.index(letter) + 1), end="")
+# d = {
+#     "1": ".,?!:",
+#     "2": "ABC",
+#     "3": "DEF",
+#     "4": "GHI",
+#     "5": "JKL",
+#     "6": "MNO",
+#     "7": "PQRS",
+#     "8": "TUV",
+#     "9": "WXYZ",
+#     "0": " "
+# }
+# for letter in input().upper():
+#     for key, value in d.items():
+#         if letter in value:
+#             print(key * (value.index(letter) + 1), end="")
 
-# 4433555555666110966677755531111
+# ---------------- 7 --------------------
+
+letters = [c for c in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789']
+morse = ['.-', '-...', '-.-.', '-..', '.', '..-.', '--.', '....', '..', '.---', '-.-', '.-..',
+         '--', '-.', '---', '.--.', '--.-', '.-.', '...', '-', '..-', '...-', '.--', '-..-',
+         '-.--', '--..', '-----', '.----', '..---', '...--', '....-', '.....', '-....', '--...', '---..', '----.']
+mydict = dict(zip(letters, morse))
+word = input().upper()
+
+for c in word:
+    if c in mydict:
+        print(mydict[c], end=' ')
