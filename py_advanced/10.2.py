@@ -77,3 +77,26 @@
 # print(f"{a}: {classes[a]}")
 
 # ---------------- 6 --------------------
+
+d = {
+    "1": ".,?!:",
+    "2": "ABC",
+    "3": "DEF",
+    "4": "GHI",
+    "5": "JKL",
+    "6": "MNO",
+    "7": "PQRS",
+    "8": "TUV",
+    "9": "WXYZ",
+    "0": " "
+}
+res = []
+a = input().upper()
+for i in range(len(a)):#строка
+    for key in d: #ключи в словаре
+        for value in d[key]: #значение по ключу
+            if value == a[i]:
+                res.append(key*(value.find(a[i])))
+print(res)
+
+#4433555555666110966677755531111
