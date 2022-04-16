@@ -90,13 +90,9 @@ d = {
     "9": "WXYZ",
     "0": " "
 }
-res = []
-a = input().upper()
-for i in range(len(a)):#строка
-    for key in d: #ключи в словаре
-        for value in d[key]: #значение по ключу
-            if value == a[i]:
-                res.append(key*(value.find(a[i])))
-print(res)
+for letter in input().upper():
+    for key, value in d.items():
+        if letter in value:
+            print(key * (value.index(letter) + 1), end="")
 
-#4433555555666110966677755531111
+# 4433555555666110966677755531111
