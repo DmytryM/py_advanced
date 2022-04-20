@@ -61,3 +61,7 @@ pets = [('Hatiko', 'Parker', 'Wilson', 50),
         ('Rocky', 'Simon', 'Nevel', 32)]
 
 result = {}
+for calls, *name in pets:
+    result.setdefault(tuple(name), []).append(calls)
+
+print(result)
