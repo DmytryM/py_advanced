@@ -44,24 +44,48 @@
 
 # ---------------- 5 --------------------
 
-pets = [('Hatiko', 'Parker', 'Wilson', 50),
-        ('Rusty', 'Josh', 'King', 25),
-        ('Fido', 'John', 'Smith', 28),
-        ('Butch', 'Jake', 'Smirnoff', 18),
-        ('Odi', 'Emma', 'Wright', 18),
-        ('Balto', 'Josh', 'King', 25),
-        ('Barry', 'Josh', 'King', 25),
-        ('Snape', 'Hannah', 'Taylor', 40),
-        ('Horry', 'Martha', 'Robinson', 73),
-        ('Giro', 'Alex', 'Martinez', 65),
-        ('Zooma', 'Simon', 'Nevel', 32),
-        ('Lassie', 'Josh', 'King', 25),
-        ('Chase', 'Martha', 'Robinson', 73),
-        ('Ace', 'Martha', 'Williams', 38),
-        ('Rocky', 'Simon', 'Nevel', 32)]
+# pets = [('Hatiko', 'Parker', 'Wilson', 50),
+#         ('Rusty', 'Josh', 'King', 25),
+#         ('Fido', 'John', 'Smith', 28),
+#         ('Butch', 'Jake', 'Smirnoff', 18),
+#         ('Odi', 'Emma', 'Wright', 18),
+#         ('Balto', 'Josh', 'King', 25),
+#         ('Barry', 'Josh', 'King', 25),
+#         ('Snape', 'Hannah', 'Taylor', 40),
+#         ('Horry', 'Martha', 'Robinson', 73),
+#         ('Giro', 'Alex', 'Martinez', 65),
+#         ('Zooma', 'Simon', 'Nevel', 32),
+#         ('Lassie', 'Josh', 'King', 25),
+#         ('Chase', 'Martha', 'Robinson', 73),
+#         ('Ace', 'Martha', 'Williams', 38),
+#         ('Rocky', 'Simon', 'Nevel', 32)]
+#
+# result = {}
+# for calls, *name in pets:
+#     result.setdefault(tuple(name), []).append(calls)
+#
+# print(result)
 
-result = {}
-for calls, *name in pets:
-    result.setdefault(tuple(name), []).append(calls)
+# ---------------- 6 --------------------
 
-print(result)
+# a = input().lower().split()
+# res = []
+# toPrint = []
+# for i in a:
+#     res.append(i.strip('.,!?:;-'))  # deleting symbols
+#
+# result = {}
+# for num in res:
+#     result[num] = result.get(num, 0) + 1  # searching for an occurrence of each word
+#
+# for key, value in result.items():
+#     if value == min(result.values()):  # searching of min value of each key
+#         toPrint.append(key)
+#
+# # print(sorted(toPrint[0]))
+# toPrint.sort()
+# print(toPrint[0])
+
+# ---------------- 7 --------------------
+
+
