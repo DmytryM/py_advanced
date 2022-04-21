@@ -18,12 +18,11 @@
 
 # ---------------- 2 --------------------
 
-
-result1 = {}
-result2 = {}
-for let in input():
-    result1[let] = result1.get(let, 0) + 1
-for let in input():
-    result2[let] = result2.get(let, 0) + 1
-
-print('YES' if result1 == result2 else 'NO')
+# result1 = {}
+# result2 = {}
+# for let in input():
+#     result1[let] = result1.get(let, 0) + 1
+# for let in input():
+#     result2[let] = result2.get(let, 0) + 1
+#
+# print('YES' if result1 == result2 else 'NO')
