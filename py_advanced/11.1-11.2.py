@@ -22,3 +22,14 @@
 # for i in password(length):
 #     print(i, end='')
 # # print(password(length), end='')
+
+# ---------------- 3 --------------------
+
+# import random
+#
+# a = []
+# for i in range(7):
+#     a.append(random.randint(1, 49))
+# print(*sorted(a))
+
+# ---------------- 4 --------------------
