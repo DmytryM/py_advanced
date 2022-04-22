@@ -81,3 +81,19 @@
 
 # ---------------- 7 --------------------
 
+result = {}
+line = {}
+line1 = {}
+letters = input()
+for let in letters:
+    line[let] = line.get(let, 0) + 1
+for i in range(int(input())):
+    char, value = input().split(': ')
+    line1[int(value)] = char
+for i, j in line.items():
+    for i1, j1 in line1.items():
+        if j == i1:
+            result[i] = j1
+
+print(*(result[let] for let in letters), sep='')
+
