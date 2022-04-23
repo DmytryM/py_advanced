@@ -101,7 +101,7 @@
 
 # ---------------- 9 --------------------
 
-#first
+# first
 # from random import shuffle
 #
 # lst = list(range(1, 76))
@@ -109,7 +109,7 @@
 # m = [[lst.pop() for _ in range(5)] for _ in range(5)]
 # m[2][2] = 0
 # [print(*res) for res in m]
-#second
+# second
 # nums = [i for i in range(1, 76)]
 # res = [[0 for _ in range(5)] for _ in range(5)]
 # for i in range(5):
@@ -128,3 +128,23 @@
 #     print()
 
 # ---------------- 10 --------------------
+
+# import random
+#
+# res, resF, resS = [], [], []
+#
+# for i in range(int(input())):
+#     res.append(input())
+#
+# res1 = res.copy()
+# random.shuffle(res1)
+# i = 0
+# while i < len(res):
+#     First = random.choice(res)
+#     Second = random.choice(res1)
+#     if First != Second and First not in resF and Second not in resS:
+#         resF.append(First)
+#         resS.append(Second)
+#         i += 1
+# for i in range(len(resF)):
+#     print(f"{resF[i]} - {resS[i]}")
