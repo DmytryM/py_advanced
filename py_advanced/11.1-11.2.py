@@ -148,3 +148,32 @@
 #         i += 1
 # for i in range(len(resF)):
 #     print(f"{resF[i]} - {resS[i]}")
+
+# ---------------- 11 --------------------
+
+# import random as r
+#
+#
+# def generate_password(length):
+#     s = 'abcdefghijkmnpqrstuvwxyz2345678923456789ABCDEFGHJKLMNPQRSTUVWXYZ23456789'
+#     pw = ''.join([r.choice(s) for _ in range(length)])
+#     return pw
+#
+#
+# def generate_passwords(count, length):
+#     return [generate_password(length) for _ in range(count)]
+#
+#
+# n, m = int(input()), int(input())
+#
+# print(*generate_passwords(n, m), sep='\n')
+
+# ---------------- 12 --------------------
+
+def generate_password(length):
+    pass
+
+def generate_passwords(count, length):
+    pass
+
+n, m = int(input()), int(input())
