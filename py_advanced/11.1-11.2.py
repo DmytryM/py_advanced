@@ -101,13 +101,15 @@
 
 # ---------------- 9 --------------------
 
-from random import shuffle
-lst = list(range(1, 76))
-shuffle(lst)
-m = [[lst.pop() for _ in range(5)] for _ in range(5)]
-m[2][2] = 0
-for row in m:
-    print(*row)
+#first
+# from random import shuffle
+#
+# lst = list(range(1, 76))
+# shuffle(lst)
+# m = [[lst.pop() for _ in range(5)] for _ in range(5)]
+# m[2][2] = 0
+# [print(*res) for res in m]
+#second
 # nums = [i for i in range(1, 76)]
 # res = [[0 for _ in range(5)] for _ in range(5)]
 # for i in range(5):
@@ -124,3 +126,5 @@ for row in m:
 #     for j in range(5):
 #         print(str(res[i][j]).ljust(6), end='')
 #     print()
+
+# ---------------- 10 --------------------
