@@ -100,3 +100,27 @@
 # print(*random.sample(numbers, len(numbers)), sep="")
 
 # ---------------- 9 --------------------
+
+from random import shuffle
+lst = list(range(1, 76))
+shuffle(lst)
+m = [[lst.pop() for _ in range(5)] for _ in range(5)]
+m[2][2] = 0
+for row in m:
+    print(*row)
+# nums = [i for i in range(1, 76)]
+# res = [[0 for _ in range(5)] for _ in range(5)]
+# for i in range(5):
+#     for j in range(5):
+#         result = random.sample(nums, 1)
+#         res[i][j] = result
+#         # while True:
+#         #     result = random.randint(1, 75)
+#         #     if result not in res:
+#         #         res[i][j] = result
+#         #         break
+# res[2][2] = 0
+# for i in range(5):
+#     for j in range(5):
+#         print(str(res[i][j]).ljust(6), end='')
+#     print()
