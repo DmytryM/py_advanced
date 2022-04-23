@@ -33,3 +33,19 @@
 # print(*sorted(a))
 
 # ---------------- 4 --------------------
+import random
+
+
+def generate_ip():
+    # res = []
+    # for i in range(4):
+    #     res.append(str(random.randint(0, 255)))
+    # return '.'.join(res)
+    return '.'.join(str(random.randint(0, 255)) for _ in range(4))
+
+
+result = generate_ip()
+print(generate_ip())
+# result = [str(x) for x in result]
+# print(result)
+# print('.'.join(result))
