@@ -169,11 +169,26 @@
 # print(*generate_passwords(n, m), sep='\n')
 
 # ---------------- 12 --------------------
+import random
+import string
+
 
 def generate_password(length):
-    pass
+    LETTER = {'EN': [x for x in string.ascii_uppercase if x not in 'OI'],
+              'en': [x for x in string.ascii_lowercase if x not in 'ol'],
+              'dig': [x for x in string.digits if x not in '01']}
+    LETTER_RES = LETTER['EN'] + LETTER['en'] + LETTER['dig']
+    res = [random.choice(LETTER['EN']), random.choice(LETTER['en']), random.choice(LETTER['dig'])]
+    for i in range(length - 3):
+        res.append(random.choice(LETTER_RES))
+    return res
+
 
 def generate_passwords(count, length):
-    pass
+    return [generate_password(length) for _ in range(count)]
+
 
 n, m = int(input()), int(input())
+
+result = generate_passwords(n, m)
+[print(*res, sep='') for res in result]
