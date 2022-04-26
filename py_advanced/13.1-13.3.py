@@ -17,6 +17,13 @@
 
 # ----------------- 3 --------------------
 
-from decimal import *
+# from decimal import *
+#
+# num = abs(Decimal(input()))
+# if num < 1:
+#     result = num.as_tuple().digits
+#     print(max(result))
+# else:
+#     print(max(num.as_tuple().digits) + min((num.as_tuple().digits)))
 
-num = Decimal(input())
+# ----------------- 4 --------------------
