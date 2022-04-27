@@ -75,3 +75,37 @@
 
 # ----------------- 9 --------------------
 
+# from fractions import Fraction
+#
+# n, res = int(input()), 0
+# for i in range(1, n + 1):
+#     res += Fraction(1, i ** 2)
+# print(res)
+
+# ----------------- 10 --------------------
+
+from fractions import Fraction
+from math import factorial
+# n = int(input())
+# res = 0
+# fuck_list = [1]
+# def fuck(s):
+#     result = 0
+#     result = fuck_list[-1] * s
+#     fuck_list.append(result)
+#     return result
+# # print(fuck(n))
+#
+# for i in range(1, n + 1):
+#     res += Fraction(1, fuck(i))
+# print(res)
+
+n, res = int(input()), 0
+
+for i in range(1, n + 1):
+    res += Fraction(1, factorial(i))
+print(res)
+
+
+# ----------------- 11 --------------------
+
