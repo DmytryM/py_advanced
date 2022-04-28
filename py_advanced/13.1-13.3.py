@@ -84,28 +84,69 @@
 
 # ----------------- 10 --------------------
 
-from fractions import Fraction
-from math import factorial
-# n = int(input())
-# res = 0
-# fuck_list = [1]
-# def fuck(s):
-#     result = 0
-#     result = fuck_list[-1] * s
-#     fuck_list.append(result)
-#     return result
-# # print(fuck(n))
+# from fractions import Fraction
+# from math import factorial
+# # n = int(input())
+# # res = 0
+# # fuck_list = [1]
+# # def fuck(s):
+# #     result = 0
+# #     result = fuck_list[-1] * s
+# #     fuck_list.append(result)
+# #     return result
+# # # print(fuck(n))
+# #
+# # for i in range(1, n + 1):
+# #     res += Fraction(1, fuck(i))
+# # print(res)
+#
+# n, res = int(input()), 0
 #
 # for i in range(1, n + 1):
-#     res += Fraction(1, fuck(i))
+#     res += Fraction(1, factorial(i))
 # print(res)
-
-n, res = int(input()), 0
-
-for i in range(1, n + 1):
-    res += Fraction(1, factorial(i))
-print(res)
-
 
 # ----------------- 11 --------------------
 
+# from fractions import Fraction
+#
+# def nod(a, b):
+#     while b != 0:
+#         a, b = b, a % b
+#     return a
+#
+#
+# n = int(input())
+# a = n // 2
+# b = n - a
+# while nod(a, b) != 1:
+#     a -= 1
+#     b += 1
+# res = Fraction(a, b)
+# print(res)
+
+# ----------------- 12 --------------------
+
+# from fractions import Fraction
+# n = int(input())
+# result = set()
+# for i in range(1, n + 1):
+#     for j in range(1, n + 1):
+#         if i < j or i == j:
+#             continue
+#         res = Fraction(j, i)
+#         result.add(res)
+#
+# print(*sorted(result), sep='\n')
+
+# ----------------- 13 --------------------
+
+# z1, z2 = complex(input()), complex(input())
+# print(f"{z1} + {z2} = {z1 + z2}")
+# print(f"{z1} - {z2} = {z1 - z2}")
+# print(f"{z1} * {z2} = {z1 * z2}")
+
+# ----------------- 14--------------------
+
+numbers = [3 + 4j, 3 + 1j, -7 + 3j, 4 + 8j, -8 + 10j, -3 + 2j, 3 - 2j, -9 + 9j, -1 - 1j, -1 - 10j, -20 + 15j, -21 + 1j, 1j, -3 + 8j, 4 - 6j, 8 + 2j, 2 + 3j]
+print(max(numbers, key=abs))
