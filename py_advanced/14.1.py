@@ -28,18 +28,18 @@
 #     turtlette()
 
 # ----------------- 1 --------------------
+import turtle
+
 
 def rectangle(width, height):
-    import turtle
-    for i in range(2):
+    for _ in range(2):
         turtle.forward(width)
         turtle.left(90)
         turtle.forward(height)
         turtle.left(90)
 
-w = int(input('Введити ширину = '))
-h = int(input('Введити высоту = '))
+
+w = int(input('Введите ширину = '))
+h = int(input('Введите высоту = '))
 
 rectangle(w, h)
-
-
