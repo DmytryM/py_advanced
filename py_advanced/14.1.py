@@ -28,18 +28,36 @@
 #     turtlette()
 
 # ----------------- 1 --------------------
-import turtle
+
+# import turtle
+#
+#
+# def rectangle(width, height):
+#     for _ in range(2):
+#         turtle.forward(width)
+#         turtle.left(90)
+#         turtle.forward(height)
+#         turtle.left(90)
+#
+#
+# w = int(input('Введите ширину = '))
+# h = int(input('Введите высоту = '))
+#
+# rectangle(w, h)
+
+# ----------------- 2 --------------------
+
+class Triangle:
+    def __init__(self, side):
+        self.side = side
+
+    def triangle(self, side):
+        import turtle
+        for _ in range(2):
+            turtle.forward(side)
+            turtle.left(120)
+        turtle.done()
 
 
-def rectangle(width, height):
-    for _ in range(2):
-        turtle.forward(width)
-        turtle.left(90)
-        turtle.forward(height)
-        turtle.left(90)
-
-
-w = int(input('Введите ширину = '))
-h = int(input('Введите высоту = '))
-
-rectangle(w, h)
+First = Triangle(int(input()))
+First.triangle(int(input()))
