@@ -47,17 +47,44 @@
 
 # ----------------- 2 --------------------
 
-class Triangle:
-    def __init__(self, side):
-        self.side = side
+# class Triangle:
+#     def __init__(self, side):
+#         self.side = side
+#
+#     def triangle(self):
+#         import turtle
+#         for _ in range(3):
+#             turtle.forward(self.side)
+#             turtle.left(120)
+#         turtle.done()
+#
+#
+# First = Triangle(int(input('Input')))
+# First.triangle()
 
-    def triangle(self, side):
+# ----------------- 3 --------------------
+
+class Turtle:
+    def __init__(self, side, size):
+        self.side = side
+        self.size = size
+
+    def square(self):
         import turtle
-        for _ in range(2):
-            turtle.forward(side)
-            turtle.left(120)
+        turtle.pensize(self.size)
+        for color in ['blue', 'red', 'green']:
+            turtle.pencolor(color)
+            turtle.left(67.5)
+            turtle.forward(self.side)
+            turtle.left(90)
+            turtle.forward(self.side)
+            turtle.left(90)
+            turtle.forward(self.side)
+            turtle.left(90)
+            turtle.forward(self.side)
+
         turtle.done()
 
 
-First = Triangle(int(input()))
-First.triangle(int(input()))
+Dudu = Turtle(int(input('Длина пути черепашки до угла: ')), int(input('Толщина черепашки, от 1 до 20: ')))
+Dudu.square()
