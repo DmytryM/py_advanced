@@ -12,3 +12,20 @@
 # print(matrix(3, 4, 9))  # матрица 3 × 4 из 9
 
 # ----------------- 2 --------------------
+
+# def func(*args):
+#     return max(args) + min(args)
+#
+#
+# print(func(10, 15, *[31, 42, 5, 1], *(17, 28, 19, 100), 13, 12))
+
+# ----------------- 2 --------------------
+
+def count_args(*args):
+    return args
+
+
+print(count_args())
+print(count_args(10))
+print(count_args('stepik', 'beegeek'))
+print(count_args([], (''), 'a', 12, False))
