@@ -72,5 +72,18 @@
 
 # ----------------- 6 --------------------
 
-def print_products():
+# def print_products(*args):
+#     res = [i for i in args if type(i) == str and i != '']
+#     if res:
+#         print(*[f"{i + 1}) {res[i]}" for i in range(len(res))], sep='\n')
+#     else:
+#         print("Нет продуктов")
+#
+#
+# print_products('Бананы', [1, 2], ('Stepik',), 'Яблоки', '', 'Макароны', 5, True)
+# print_products([4], {}, 1, 2, {'Beegeek'}, '')
+
+# ----------------- 7 --------------------
+
+def info_kwargs():
     pass
