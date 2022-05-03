@@ -189,3 +189,24 @@
 # commands = {'квадрат': f1, 'куб': f2, 'корень': f3, 'модуль': f4, 'синус': f5}
 #
 # print(commands[figure](number))
+
+# ----------------- 14 --------------------
+
+# def summ(n):
+#     res = {}
+#     new = 0
+#     for i in n:
+#         for j in i:
+#             new += int(j)
+#         res[i] = new
+#         new = 0
+#     return res
+#
+#
+# n = input().split()
+# result1 = summ(n)
+# for i,y in sorted(result1.items(), key=lambda para: para[1]):
+#     print(i,end=' ')
+# print(result1)
+
+# ----------------- 15 --------------------
