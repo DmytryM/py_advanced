@@ -125,3 +125,67 @@
 # points = [(-1, 1), (5, 6), (12, 0), (4, 3), (0, 1), (-3, 2), (0, 0), (-1, 3), (2, 0), (3, 0), (-9, 1), (3, 6), (8, 8)]
 #
 # print(sorted(points, key=distance))
+
+# ----------------- 11 --------------------
+
+# def mean(numbers):
+#     x,y = max(numbers), min(numbers)
+#     return x + y
+# numbers = [(10, 10, 10), (30, 45, 56), (81, 80, 39), (1, 2, 3), (12, 45, 67), (-2, -4, 100), (1, 2, 99), (89, 90, 34), (10, 20, 30), (50, 40, 50), (34, 78, 65), (-5, 90, -1)]
+#
+# print(sorted(numbers,key=mean))
+
+# ----------------- 12 --------------------
+
+# athletes = [('Дима', 10, 130, 35), ('Тимур', 11, 135, 39), ('Руслан', 9, 140, 33), ('Рустам', 10, 128, 30), ('Амир', 16, 170, 70), ('Рома', 16, 188, 100), ('Матвей', 17, 168, 68), ('Петя', 15, 190, 90)]
+#
+# def sort_name(athlete):
+#     return athlete[0]
+#
+#
+# def sort_age(athlete):
+#     return athlete[1]
+#
+#
+# def sort_height(athlete):
+#     return athlete[2]
+#
+#
+# def sort_weight(athlete):
+#     return athlete[3]
+#
+# sort_by = {1: sort_name, 2: sort_age, 3: sort_height, 4: sort_weight}
+#
+# for i in sorted(athletes, key=sort_by[int(input())]):
+#     print(*i)
+
+# ----------------- 13 --------------------
+
+# from math import sin
+#
+#
+# def f1(number):
+#     return abs(number) ** 2
+#
+#
+# def f2(number):
+#     return number ** 3
+#
+#
+# def f3(number):
+#     return abs(number) ** 0.5
+#
+#
+# def f4(number):
+#     return abs(number)
+#
+#
+# def f5(number):
+#     return sin(number)
+#
+#
+# number, figure = int(input()), input()
+#
+# commands = {'квадрат': f1, 'куб': f2, 'корень': f3, 'модуль': f4, 'синус': f5}
+#
+# print(commands[figure](number))
