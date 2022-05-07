@@ -342,22 +342,24 @@
 
 # ----------------- 20 --------------------
 
-def map(function, items):
-    result = []
-    for item in items:
-        result.append(function(item))
-    return result
+# def map(function, items):
+#     result = []
+#     for item in items:
+#         result.append(function(item))
+#     return result
+#
+# def add3(x):
+#     return x + 3
+#
+#
+# def mul7(x):
+#     return x * 7
+#
+#
+# def func_apply(function, numbers):
+#     result = map(function, numbers)
+#     return result
+#
+# print(func_apply(mul7, [1, 2, 3, 4, 5, 6]))
 
-def add3(x):
-    return x + 3
-
-
-def mul7(x):
-    return x * 7
-
-
-def func_apply(function, numbers):
-    result = map(function, numbers)
-    return result
-
-print(func_apply(mul7, [1, 2, 3, 4, 5, 6]))
+# ----------------- 21 --------------------
