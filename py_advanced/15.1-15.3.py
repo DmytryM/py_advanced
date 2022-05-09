@@ -410,3 +410,9 @@
 # print(reduce(lambda x, y: f'{x} {y},', c, 'Cities:').strip(','))
 
 # ----------------- 23 --------------------
+
+# func = lambda x: True if x % 19 == 0 or x % 13 == 0 else False
+# print(func(20))
+
+# ----------------- 24 --------------------
+
