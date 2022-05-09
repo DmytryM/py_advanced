@@ -416,3 +416,6 @@
 
 # ----------------- 24 --------------------
 
+func = lambda x: x[0].lower() == x[-1].lower() == 'a'
+print(func('bcdA'))
+print(func('abcdA'))
