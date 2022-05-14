@@ -440,23 +440,23 @@
 
 # ----------------- 25.2 --------------------
 
-def is_num(x):
-    try:
-        return float(x) >= 0 or float(x) <= 0
-    except:
-        return False
-
-# is_num = lambda s: s.count('.') <= 1 and set(s) <= set('.1234567890')
-
-print(is_num('10.34ab'))
-print(is_num('10.45'))
-print(is_num('-18'))
-print(is_num('-34.67'))
-print(is_num('987'))
-print(is_num('abcd'))
-print(is_num('123.122.12'))
-print(is_num('-123.122'))
-print(is_num('--13.2'))
+# def is_num(x):
+#     try:
+#         return float(x) >= 0 or float(x) <= 0
+#     except:
+#         return False
+#
+# # is_num = lambda s: s.count('.') <= 1 and set(s) <= set('.1234567890')
+#
+# print(is_num('10.34ab'))
+# print(is_num('10.45'))
+# print(is_num('-18'))
+# print(is_num('-34.67'))
+# print(is_num('987'))
+# print(is_num('abcd'))
+# print(is_num('123.122.12'))
+# print(is_num('-123.122'))
+# print(is_num('--13.2'))
 
 # ----------------- 26 --------------------
 
@@ -533,3 +533,15 @@ print(is_num('--13.2'))
 # ----------------- 32 --------------------
 
 # print(*(map(lambda x: 255 - int(x), input().split())))
+
+# ----------------- 33 --------------------
+
+def ignore_command(command):
+    ignore = ['alias', 'configuration', 'ip', 'sql', 'select', 'update', 'exec', 'del', 'truncate']
+    return any([i in command for i in ignore])
+
+
+print(ignore_command('get ip'))
+print(ignore_command('select all'))
+print(ignore_command('delete'))
+print(ignore_command('trancate'))
