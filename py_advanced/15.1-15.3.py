@@ -461,3 +461,34 @@
 # print(*res2)
 
 # ----------------- 28 --------------------
+
+# data = [(19542209, 'New York'), (4887871, 'Alabama'), (1420491, 'Hawaii'), (626299, 'Vermont'), (1805832, 'West Virginia'),
+#         (39865590, 'California'), (11799448, 'Ohio'), (10711908, 'Georgia'), (10077331, 'Michigan'), (10439388, 'Virginia'),
+#         (7705281, 'Washington'), (7151502, 'Arizona'), (7029917, 'Massachusetts'), (6910840, 'Tennessee')]
+
+# ----------------- 29 --------------------
+
+# data = ['год', 'человек', 'время', 'дело', 'жизнь', 'день', 'рука', 'раз', 'работа', 'слово', 'место', 'лицо', 'друг', 'глаз',
+#         'вопрос', 'дом', 'сторона', 'страна', 'мир', 'случай', 'голова', 'ребенок', 'сила', 'конец', 'вид', 'система', 'часть',
+#         'город', 'отношение', 'женщина', 'деньги']
+#
+# print(*sorted(data, key=lambda x: (len(x), x)))
+
+# ----------------- 30 --------------------
+
+mixed_list = ['tuesday', 'abroad', 'abuse', 'beside', 'monday', 'abate', 'accessory', 'absorb', 1384878, 'sunday',
+              'about', 454805,
+              'saturday', 'abort', 2121919, 2552839, 977970, 1772933, 1564063, 'abduct', 901271, 2680434, 'bicycle',
+              'accelerate', 1109147, 942908,
+              'berry', 433507, 'bias', 'bestow', 1875665, 'besides', 'bewilder', 1586517, 375290, 1503450, 2713047,
+              'abnormal', 2286106, 242192, 701049,
+              2866491, 'benevolent', 'bigot', 'abuse', 'abrupt', 343772, 'able', 2135748, 690280, 686008, 'beyond',
+              2415643, 'aboard', 'bet', 859105,
+              'accident', 2223166, 894187, 146564, 1251748, 2851543, 1619426, 2263113, 1618068, 'berth', 'abolish',
+              'beware', 2618492, 1555062, 'access',
+              'absent', 'abundant', 2950603, 'betray', 'beverage', 'abide', 'abandon', 2284251, 'wednesday', 2709698,
+              'thursday', 810387, 'friday', 2576799,
+              2213552, 1599022, 'accept', 'abuse', 'abound', 1352953, 'bid', 1805326, 1499197, 2241159, 605320, 2347441]
+
+
+print(max(list(filter(lambda x: x if isinstance(x, int) else False, mixed_list))))
