@@ -536,12 +536,21 @@
 
 # ----------------- 33 --------------------
 
-def ignore_command(command):
-    ignore = ['alias', 'configuration', 'ip', 'sql', 'select', 'update', 'exec', 'del', 'truncate']
-    return any([i in command for i in ignore])
+# def ignore_command(command):
+#     ignore = ['alias', 'configuration', 'ip', 'sql', 'select', 'update', 'exec', 'del', 'truncate']
+#     return any([i in command for i in ignore])
+#
+#
+# print(ignore_command('get ip'))
+# print(ignore_command('select all'))
+# print(ignore_command('delete'))
+# print(ignore_command('trancate'))
 
+# ----------------- 34 --------------------
 
-print(ignore_command('get ip'))
-print(ignore_command('select all'))
-print(ignore_command('delete'))
-print(ignore_command('trancate'))
+countries = ['Russia', 'USA', 'UK', 'Germany', 'France', 'India']
+capitals = ['Moscow', 'Washington', 'London', 'Berlin', 'Paris', 'Delhi']
+population = [145_934_462, 331_002_651, 80_345_321, 67_886_011, 65_273_511, 1_380_004_385]
+
+for c, cap, pop in zip(countries, capitals, population):
+    print(f"{cap} is the capital of {c}, population equal {pop} people.")
