@@ -21,4 +21,4 @@
 
 # ----------------- 4 --------------------
 
-print(__import__('random').choice(list(open("lines.txt", encoding='utf-8'))))
+# print(__import__('random').choice(list(open("lines.txt", encoding='utf-8'))))
