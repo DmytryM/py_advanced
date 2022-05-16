@@ -37,7 +37,12 @@
 
 # ----------------- 7 --------------------
 
-file = open('prices.txt')
-lines = map(str.split, file)
-print(sum(map(lambda line: int(line[1]) * int(line[2]), lines)))
-file.close()
+# file = open('prices.txt')
+# lines = map(str.split, file)
+# print(sum(map(lambda line: int(line[1]) * int(line[2]), lines)))
+# file.close()
+
+# ----------------- 8 --------------------
+
+with open('text.txt') as f:
+    print(f.read()[::-1])
