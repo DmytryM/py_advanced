@@ -44,5 +44,12 @@
 
 # ----------------- 8 --------------------
 
-with open('text.txt') as f:
-    print(f.read()[::-1])
+# with open('text.txt') as f:
+#     print(f.read()[::-1])
+
+# ----------------- 9 --------------------
+
+# with open('data.txt', encoding='utf-8') as file:
+#     print(*file.readlines()[::-1], sep='')
+
+# ----------------- 10 --------------------
