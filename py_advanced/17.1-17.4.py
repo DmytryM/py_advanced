@@ -53,3 +53,14 @@
 #     print(*file.readlines()[::-1], sep='')
 
 # ----------------- 10 --------------------
+
+# file = open('lines.txt')
+# lines = [line.strip() for line in file.readlines()]
+# print(lines, key=len)
+# file.close()
+
+# ----------------- 11 --------------------
+
+# with open('numbers.txt') as f:
+#     for line in f:
+#         print(sum(map(int, line.split())))
