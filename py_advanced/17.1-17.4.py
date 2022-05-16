@@ -22,3 +22,17 @@
 # ----------------- 4 --------------------
 
 # print(__import__('random').choice(list(open("lines.txt", encoding='utf-8'))))
+
+# ----------------- 5 --------------------
+
+# file = open('numbers.txt')
+# print(sum(map(int, file)))
+# file.close()
+
+# ----------------- 6 --------------------
+
+# file = open('nums.txt')
+# print(sum(map(int, file.read().split())))
+# file.close()
+
+# ----------------- 7 --------------------
