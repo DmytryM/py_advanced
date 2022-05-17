@@ -64,3 +64,16 @@
 # with open('numbers.txt') as f:
 #     for line in f:
 #         print(sum(map(int, line.split())))
+
+# ----------------- 12 --------------------
+# import re
+#
+# with open('nums.txt') as f:
+#     res = []
+#     lines = [line.strip().split() for line in f.readlines()]
+#     numbers = list(map(int, re.findall("\d+", lines)))
+#     print(lines)
+#     print(res)
+
+import cv2
+print(cv2.__version__)
