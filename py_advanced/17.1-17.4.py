@@ -66,16 +66,32 @@
 #         print(sum(map(int, line.split())))
 
 # ----------------- 12 --------------------
-import re
 
-with open('nums.txt') as f:
-    res = []
-    sum = 0
-    sp = [re.findall('\d+', i) for i in f.readlines()]
-    # print(sp)
-    for i in sp:
+# with open('numbers.txt') as file:
+#     temp = ''
+#     n = 0
+#     for c in file.read():
+#         if c.isdigit():
+#             temp += c
+#         elif temp != '':
+#             n += int(temp)
+#             temp = ''
+#     print(n)
+
+# ----------------- 13 --------------------
+
+with open('file.txt') as file:
+    res = [line.strip() for line in file.readlines()]
+    lines = len(res)
+    words = 0
+    letters = 0
+    for i in res:
+        result = i.split()
+        words += len(result)
         for j in i:
-            sum += int(j)
-    print(sum)
-
-
+            if j.isalpha():
+                letters += 1
+    print('Input file contains:')
+    print(f"{letters} letters")
+    print(f"{words} words")
+    print(f"{lines} lines")
