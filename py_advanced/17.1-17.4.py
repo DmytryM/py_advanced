@@ -113,3 +113,18 @@
 #     print(line[0])
 
 # ----------------- 16 --------------------
+
+# def read_csv():
+#     with open('data.csv') as File:
+#         res = [line.strip() for line in File.readlines()]
+#         print(res)
+
+import csv
+
+def read_csv():
+    results = []
+    with open('data.csv') as File:
+        reader = csv.DictReader(File)
+        for row in reader:
+            results.append(row)
+        return results
