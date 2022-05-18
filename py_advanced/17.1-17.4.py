@@ -66,14 +66,16 @@
 #         print(sum(map(int, line.split())))
 
 # ----------------- 12 --------------------
-# import re
-#
-# with open('nums.txt') as f:
-#     res = []
-#     lines = [line.strip().split() for line in f.readlines()]
-#     numbers = list(map(int, re.findall("\d+", lines)))
-#     print(lines)
-#     print(res)
+import re
 
-import cv2
-print(cv2.__version__)
+with open('nums.txt') as f:
+    res = []
+    sum = 0
+    sp = [re.findall('\d+', i) for i in f.readlines()]
+    # print(sp)
+    for i in sp:
+        for j in i:
+            sum += int(j)
+    print(sum)
+
+
