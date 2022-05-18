@@ -105,3 +105,11 @@
 #     [print(random.choice(name), random.choice(surname)) for i in range(3)]
 
 # ----------------- 15 --------------------
+
+# with open('population.txt') as file:
+#     data = [s.strip().split('\t') for s in file.readlines()]
+#
+# for line in filter(lambda x: x[0][0].upper() == 'G' and int(x[1]) > 500000, data):
+#     print(line[0])
+
+# ----------------- 16 --------------------
