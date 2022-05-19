@@ -147,6 +147,8 @@
 
 # ----------------- 18 --------------------
 
-import random
-with open('random.txt', 'w') as output:
-    print(*random.sample(range(111, 777), 25), sep='\n', file=output)
+# import random
+# with open('random.txt', 'w') as output:
+#     print(*random.sample(range(111, 777), 25), sep='\n', file=output)
+
+# ----------------- 19 --------------------
