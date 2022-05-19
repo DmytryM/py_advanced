@@ -139,8 +139,13 @@
 
 # ----------------- 17 --------------------
 
-with open('lines.txt', encoding='utf-8') as file:
-    text = file.readlines()
+# with open('lines.txt', encoding='utf-8') as file:
+#     text = file.readlines()
+#
+# n = len(max(text, key=len))
+# print(*filter(lambda x: len(x) == n, text), sep='')
 
-n = len(max(text, key=len))
-print(*filter(lambda x: len(x) == n, text), sep='')
+# ----------------- 18 --------------------
+
+with open('output.txt', 'w') as file:
+    file.write(input())
