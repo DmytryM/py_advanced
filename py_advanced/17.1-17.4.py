@@ -152,3 +152,7 @@
 #     print(*random.sample(range(111, 777), 25), sep='\n', file=output)
 
 # ----------------- 19 --------------------
+
+with open('input.txt') as inp, open('output.txt', 'w') as out:
+    data = inp.readlines()
+    out.writelines([f'{i + 1}) {data[i]}' for i in range(len(data))])
