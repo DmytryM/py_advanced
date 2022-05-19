@@ -119,12 +119,28 @@
 #         res = [line.strip() for line in File.readlines()]
 #         print(res)
 
-import csv
+# import csv
+#
+# def read_csv():
+#     results = []
+#     with open('data.csv') as File:
+#         reader = csv.DictReader(File)
+#         for row in reader:
+#             results.append(row)
+#         return results
 
-def read_csv():
-    results = []
-    with open('data.csv') as File:
-        reader = csv.DictReader(File)
-        for row in reader:
-            results.append(row)
-        return results
+# def read_csv():
+#     with open('data.csv') as f:
+#         keys = f.readline().strip().split(',')
+#         return [dict(zip(keys, line.strip().split(','))) for line in f]
+#
+#
+# print(read_csv())
+
+# ----------------- 17 --------------------
+
+with open('lines.txt', encoding='utf-8') as file:
+    text = file.readlines()
+
+n = len(max(text, key=len))
+print(*filter(lambda x: len(x) == n, text), sep='')
