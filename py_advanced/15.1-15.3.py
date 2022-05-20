@@ -548,9 +548,12 @@
 
 # ----------------- 34 --------------------
 
-countries = ['Russia', 'USA', 'UK', 'Germany', 'France', 'India']
-capitals = ['Moscow', 'Washington', 'London', 'Berlin', 'Paris', 'Delhi']
-population = [145_934_462, 331_002_651, 80_345_321, 67_886_011, 65_273_511, 1_380_004_385]
+# countries = ['Russia', 'USA', 'UK', 'Germany', 'France', 'India']
+# capitals = ['Moscow', 'Washington', 'London', 'Berlin', 'Paris', 'Delhi']
+# population = [145_934_462, 331_002_651, 80_345_321, 67_886_011, 65_273_511, 1_380_004_385]
+#
+# for c, cap, pop in zip(countries, capitals, population):
+#     print(f"{cap} is the capital of {c}, population equal {pop} people.")
 
-for c, cap, pop in zip(countries, capitals, population):
-    print(f"{cap} is the capital of {c}, population equal {pop} people.")
+# ----------------- 35 --------------------
+

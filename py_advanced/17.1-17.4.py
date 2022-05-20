@@ -159,10 +159,9 @@
 
 # ----------------- 20 --------------------
 
-with open('class_scores.txt') as inn, open('new_scores.txt', 'w') as out:
-    for line in inn:
-        name, value = line.split()
-        out.write(f'{name} {min(100, int(value) + 5)}\n')
+# with open('class_scores.txt') as inn, open('new_scores.txt', 'w') as out:
+#     for line in inn:
+#         name, value = line.split()
+#         out.write(f'{name} {min(100, int(value) + 5)}\n')
 
-    # out.writelines(([f'{i[0]} {int(i[1]) + 5}\n' for i in marks]))
-    # out.writelines([f'{i + 1}) {data[i]}' for i in range(len(data))])
+# ----------------- 21 --------------------
