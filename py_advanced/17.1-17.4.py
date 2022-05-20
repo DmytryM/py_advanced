@@ -165,3 +165,11 @@
 #         out.write(f'{name} {min(100, int(value) + 5)}\n')
 
 # ----------------- 21 --------------------
+
+# names = [input() for i in range(int(input()))]
+# with open('output.txt', 'w') as out:
+#     for i in names:
+#         with open(i, 'r') as inpt:
+#             res1 = inpt.readlines()
+#             for j in res1:
+#                 out.write(j)
