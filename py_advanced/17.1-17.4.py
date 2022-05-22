@@ -173,3 +173,17 @@
 #             res1 = inpt.readlines()
 #             for j in res1:
 #                 out.write(j)
+
+# ----------------- 22 --------------------
+
+def minutes(x):
+    res = [int(i) for i in x.split(':')]
+    return res[0] * 60 + res[1]
+
+
+with open('logfile.txt', 'r', encoding='utf-8') as log, open('output.txt', 'w', encoding='utf-8') as out:
+    data = [line.strip().split(',') for line in log.readlines()]
+    for i in data:
+        if minutes(i[2]) - minutes(i[1]) >= 60:
+            out.write(i[0] + '\n')
+
