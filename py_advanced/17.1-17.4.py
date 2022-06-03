@@ -187,5 +187,11 @@
 #         if minutes(i[2]) - minutes(i[1]) >= 60:
 #             out.write(i[0] + '\n')
 
+# ----------------- 23 --------------------
+
+with open('goats.txt') as file:
+    text = [line.strip() for line in file.readlines()]
+
+print(text)
 
 
