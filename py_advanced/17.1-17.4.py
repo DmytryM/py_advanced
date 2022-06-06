@@ -189,10 +189,24 @@
 
 # ----------------- 23 --------------------
 
-with open('goats.txt') as file:
+with open('goats.txt') as file, open('answer.txt', 'w') as answer:
     text = [line.strip() for line in file.readlines()]
+    text.remove('GOATS')
+    text.remove('COLOURS')
+    text.sort()
+    print(text)
+    result = {i: text.count(i) for i in text}
+    print(result)
+    for i in result:
+        if int(result[i] / sum(result.values()) * 100) > 7:
+            answer.write(i + '\n')
 
-print(text)
+
+
+
+#         print(i)
+# print(result)
+# print(text)
 
 
 
