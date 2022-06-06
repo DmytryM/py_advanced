@@ -189,26 +189,10 @@
 
 # ----------------- 23 --------------------
 
-with open('goats.txt') as file, open('answer.txt', 'w') as answer:
-    text = [line.strip() for line in file.readlines()]
-    text.remove('GOATS')
-    text.remove('COLOURS')
-    text.sort()
-    print(text)
+with open('goats.txt') as file, open('answer.txt', 'w') as out:
+    goats = [line.strip() for line in file.readlines()]
+    text = goats[goats.index('GOATS'):-1]
     result = {i: text.count(i) for i in text}
-    print(result)
-    for i in result:
-        if int(result[i] / sum(result.values()) * 100) > 7:
-            answer.write(i + '\n')
-
-
-
-
-#         print(i)
-# print(result)
-# print(text)
-
-
-
-
-
+    number_of_all = len(text)
+    answer = [key for key, value in result.items() if value / number_of_all > 0.07]
+    print(*sorted(answer), sep='\n', file=out)
