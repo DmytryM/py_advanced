@@ -6,5 +6,16 @@
 
 # ---------------- 2 --------------------
 
-fruits = {'apple', 'banana', 'cherry', 'avocado', 'pineapple', 'apricot', 'banana', 'avocado', 'grapefruit'}
+# fruits = {'apple', 'banana', 'cherry', 'avocado', 'pineapple', 'apricot', 'banana', 'avocado', 'grapefruit'}
+#
+# sortfr = sorted(fruits, reverse=True)
+# print(*sortfr, sep='\n')
 
+# ---------------- 3 --------------------
+
+# print(len(set(input())))
+
+# ---------------- 4 --------------------
+
+n = int(input())
+print('YES' if len(str(n)) == len(set(str(n))) else 'NO')
