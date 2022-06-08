@@ -14,8 +14,22 @@
 # ---------------- 3 --------------------
 
 # print(len(set(input())))
-
+ 
 # ---------------- 4 --------------------
 
-n = int(input())
-print('YES' if len(str(n)) == len(set(str(n))) else 'NO')
+# n = input()
+# print('YES' if len(n) == len(set(n)) else 'NO')
+
+# ---------------- 5 --------------------
+
+# numbers = set(input() + input())
+# print('YES' if len(numbers) == 10 else 'NO')
+
+# ---------------- 6 --------------------
+
+# print('YES' if set(input()) == set(input()) else 'NO')
+
+# ---------------- 7 --------------------
+
+a = input().split()
+print('YES' if set(a[0]) == set(a[1]) == set(a[2]) else 'NO')
