@@ -36,4 +36,29 @@
 
 # ---------------- 8 --------------------
 
-[print(len(set(input().lower()))) for x in range(int(input()))]
+# [print(len(set(input().lower()))) for x in range(int(input()))]
+
+# ---------------- 9 --------------------
+
+# res = set()
+# for i in range(int(input())):
+#     res.update(input().lower())
+# print(len(res))
+
+# ---------------- 10 --------------------
+
+# a = [word.lower().strip('.,;:-?!') for word in input().split()]
+# print(len(set(a)))
+
+# ---------------- 11 --------------------
+
+# l = [int(i) for i in input().split()]
+# res = set()
+# for i in l:
+#     if i in res:
+#         print('YES')
+#     else:
+#         print('NO')
+#         res.add(i)
+
+# ---------------- 12 --------------------
