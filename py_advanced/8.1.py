@@ -31,5 +31,9 @@
 
 # ---------------- 7 --------------------
 
-a = input().split()
-print('YES' if set(a[0]) == set(a[1]) == set(a[2]) else 'NO')
+# a = input().split()
+# print('YES' if set(a[0]) == set(a[1]) == set(a[2]) else 'NO')
+
+# ---------------- 8 --------------------
+
+[print(len(set(input().lower()))) for x in range(int(input()))]
