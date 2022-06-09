@@ -52,13 +52,10 @@
 
 # ---------------- 11 --------------------
 
-# l = [int(i) for i in input().split()]
-# res = set()
-# for i in l:
-#     if i in res:
-#         print('YES')
-#     else:
-#         print('NO')
-#         res.add(i)
+# s = set()
+# for item in input().split():
+#   print(["NO", "YES"][item in s])
+#   s.add(item)
 
 # ---------------- 12 --------------------
+
