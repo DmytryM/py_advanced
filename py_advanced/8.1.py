@@ -14,7 +14,7 @@
 # ---------------- 3 --------------------
 
 # print(len(set(input())))
- 
+
 # ---------------- 4 --------------------
 
 # n = input()
@@ -62,3 +62,18 @@
 # print(len(set(input().split()) & set(input().split())))
 
 # ---------------- 13 --------------------
+
+# print(*sorted(set(map(int, input().split())) & set(map(int, input().split()))))
+
+# ---------------- 14 --------------------
+
+# print(*sorted(set(map(int, input().split())) - set(map(int, input().split()))))
+
+# ---------------- 15 --------------------
+
+n = int(input())
+a = [set(input()) for x in range(1, n)]
+myset1 = a[0]
+for i in range(1, n - 1):
+    myset1 &= a[i]
+print(*sorted(myset1))
