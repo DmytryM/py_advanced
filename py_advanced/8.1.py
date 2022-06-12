@@ -71,9 +71,8 @@
 
 # ---------------- 15 --------------------
 
-n = int(input())
-a = [set(input()) for x in range(1, n)]
-myset1 = a[0]
-for i in range(1, n - 1):
-    myset1 &= a[i]
-print(*sorted(myset1))
+# s = set('1234567890')
+#
+# for i in range(int(input())):
+#     s &= set(input())
+# print(*sorted(s))
