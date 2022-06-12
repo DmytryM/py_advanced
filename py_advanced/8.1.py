@@ -76,3 +76,7 @@
 # for i in range(int(input())):
 #     s &= set(input())
 # print(*sorted(s))
+
+# ---------------- 16 --------------------
+
+print(("YES", "NO")[set(input()).isdisjoint(input())])
