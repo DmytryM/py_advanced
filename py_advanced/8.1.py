@@ -79,4 +79,17 @@
 
 # ---------------- 16 --------------------
 
-print(("YES", "NO")[set(input()).isdisjoint(input())])
+# print(("YES", "NO")[set(input()).isdisjoint(input())])
+
+# ---------------- 17 --------------------
+
+# print(("NO", 'YES')[set(input()).issuperset(input())])
+
+# ---------------- 18 --------------------
+
+a = set([int(i) for i in input().split()])
+b = set([int(i) for i in input().split()])
+c = set([int(i) for i in input().split()])
+g = a & b
+res = g - c
+print(*sorted(res))
