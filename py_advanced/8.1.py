@@ -87,9 +87,22 @@
 
 # ---------------- 18 --------------------
 
-a = set([int(i) for i in input().split()])
-b = set([int(i) for i in input().split()])
-c = set([int(i) for i in input().split()])
-g = a & b
-res = g - c
-print(*sorted(res))
+# a, b, c = [set(map(int, input().split())) for _ in range(3)]
+#
+# print(*sorted((a & b) - c, reverse=True))
+
+# ---------------- 19 --------------------
+
+# items = [10, '30', 30, 10, '56', 34, '12', 90, 89, 34, 45, '67', 12, 10, 90, 23, '45', 56, '56', 1, 5, '6', 5]
+#
+# myset = {int(i) for i in items}
+#
+# print(*sorted(myset))
+
+# ---------------- 20 --------------------
+
+words = ['Plum', 'Grapefruit', 'apple', 'orange', 'pomegranate', 'Cranberry', 'lime', 'Lemon', 'grapes', 'persimmon', 'tangerine', 'Watermelon', 'currant', 'Almond']
+
+myset = {i[0].lower() for i in words}
+
+print(*sorted(myset))
