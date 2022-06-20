@@ -587,6 +587,18 @@
 # result = {int(key): value for key, value in [i.split(':') for i in s.split()]}
 # print(result)
 
-numbers = [34, 10, 4, 6, 10, 23, 90, 100, 21, 35, 95, 1, 36, 38, 19, 1, 6, 87, 1000, 13456, 360]
+# numbers = [34, 10, 4, 6, 10, 23, 90, 100, 21, 35, 95, 1, 36, 38, 19, 1, 6, 87, 1000, 13456, 360]
+#
+# result = {key: [x for x in range(1, key + 1) if key % x == 0] for key in numbers}
+# print(result)
+
+# words = ['hello', 'bye', 'yes', 'no', 'python', 'apple', 'maybe', 'stepik', 'beegeek']
+#
+# result = {key: [ord(x) for x in key] for key in words}
+# print(result)
+
+letters = {0: 'A', 1: 'B', 2: 'C', 3: 'D', 4: 'E', 5: 'F', 6: 'G', 7: 'H', 8: 'I', 9: 'J', 10: 'K', 11: 'L', 12: 'M', 13: 'N', 14: 'O', 15: 'P', 16: 'Q', 17: 'R', 18: 'S', 19: 'T', 20: 'U', 21: 'V', 22: 'W', 23: 'X', 24: 'Y', 26: 'Z'}
+
+remove_keys = [1, 5, 7, 12, 17, 19, 21, 24]
 
 result = {}
