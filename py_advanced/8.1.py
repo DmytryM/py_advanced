@@ -121,7 +121,28 @@
 # result = [x for x in res if len(x) < 4]
 # print(*sorted(result))
 
-files = ['python.png', 'qwerty.py', 'stepik.png', 'beegeek.org', 'windows.pnp', 'pen.txt', 'phone.py', 'book.txT', 'board.pNg', 'keyBoard.jpg', 'Python.PNg', 'apple.jpeg', 'png.png', 'input.tXt', 'split.pop', 'solution.Py', 'stepik.org', 'kotlin.ko', 'github.git']
-result = {c.lower() for c in files if c.lower().endswith('.png')}
+# files = ['python.png', 'qwerty.py', 'stepik.png', 'beegeek.org', 'windows.pnp', 'pen.txt', 'phone.py', 'book.txT', 'board.pNg', 'keyBoard.jpg', 'Python.PNg', 'apple.jpeg', 'png.png', 'input.tXt', 'split.pop', 'solution.Py', 'stepik.org', 'kotlin.ko', 'github.git']
+# result = {c.lower() for c in files if c.lower().endswith('.png')}
+#
+# print(*sorted(result))
 
-print(*sorted(result))
+
+# a = set([int(i) for i in input().split()])
+# b = set([int(i) for i in input().split()])
+# c = set([int(i) for i in input().split()])
+# res = (a|b|c ) - (a&b&c)
+# print(*sorted(res))
+
+# a = set([int(i) for i in input().split()])
+# b = set([int(i) for i in input().split()])
+# c = set([int(i) for i in input().split()])
+# res = (c - b -a)
+# print(*sorted(res, reverse=True))
+
+a = set([int(i) for i in input().split()])
+b = set([int(i) for i in input().split()])
+c = set([int(i) for i in input().split()])
+res1 = (a | b | c)
+res2 = set(range(11))
+res = res2- res1
+print(*sorted(res))
