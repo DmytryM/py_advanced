@@ -585,4 +585,20 @@
 
 # ----------------- 37 --------------------
 
-print(all(map(lambda x: x.isdigit() and 255 >= int(x) >= 0, input().split("."))))
+# print(all(map(lambda x: x.isdigit() and 255 >= int(x) >= 0, input().split("."))))
+
+# ----------------- 38 --------------------
+
+# ind = []
+# for i in range(int(input()), int(input())):
+#     if '0' not in str(i):
+#         ind.append(i)
+
+# for i in ind:
+#     if all(i % int(x) == 0 for x in str(i)):
+#         print(i, end=' ')
+
+# res = [i for i in range(int(input()), int(input())) if all('0' not in str(i) and i % int(x) == 0 for x in str(i))]
+# print(*res)
+
+# ----------------- 39 --------------------
