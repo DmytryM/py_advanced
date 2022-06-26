@@ -573,3 +573,16 @@
 # print(evaluate(input().split(), int(input())))
 
 # ----------------- 36 --------------------
+
+# abscissas = list(map(float, input().split()))
+# ordinates = list(map(float, input().split()))
+# applicates = list(map(float, input().split()))
+#
+# r = 2
+#
+# pairs = list(zip(abscissas, ordinates, applicates))
+# print(all(map(lambda x: x[0] ** 2 + x[1] ** 2 + x[2] ** 2 <= r**2, pairs)))
+
+# ----------------- 37 --------------------
+
+print(all(map(lambda x: x.isdigit() and 255 >= int(x) >= 0, input().split("."))))
