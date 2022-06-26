@@ -557,11 +557,19 @@
 
 # ----------------- 35 --------------------
 
-a = input().split()
-b = int(input())
-res = 0
-for i in range(len(a)):
-    frst = i
-    sec = b ** (len(a) - i - 1)
-    res += frst * sec
-print(res)
+# # for i in range(len(a)):
+# #     frst = i
+# #     sec = b ** (len(a) - i - 1)
+# #     res1 += frst * sec
+# # print(res1)
+# from functools import reduce
+# def evaluate(coefficients, x):
+#     step = range(len(coefficients) - 1, -1, -1)
+#     res = list(map(lambda a, b: int(a) * (x ** int(b)), coefficients, step))
+#     res1 = reduce(lambda a, b: int(a) + int(b), res)
+#     return res1
+#
+#
+# print(evaluate(input().split(), int(input())))
+
+# ----------------- 36 --------------------

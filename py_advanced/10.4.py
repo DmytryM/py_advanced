@@ -166,3 +166,11 @@
 # result = [{student_ids[key]: {student_names[key]: student_grades[key]}} for key in range(len(student_ids))]
 #
 # print(result)
+
+a = int(input())
+iter = 1
+for i in range(1, a + 1):
+    for j in range(1, i + 1):
+        print(iter, end=" ")
+        iter += 1
+    print("\t")
