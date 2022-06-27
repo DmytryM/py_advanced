@@ -602,3 +602,20 @@
 # print(*res)
 
 # ----------------- 39 --------------------
+
+# s = input()
+# print('YES' if all((any(i.isupper() for i in s),
+#                     any(i.islower() for i in s),
+#                     any(i.isdigit() for i in s),
+#                     len(s) >= 7)) else 'NO')
+
+# ----------------- 40 --------------------
+
+res = []
+a = int(input())
+for i in range(a):
+    b = int(input())
+    for j in range(b):
+        ind = input().split()
+
+print(res)
