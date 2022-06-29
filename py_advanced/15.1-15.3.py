@@ -615,7 +615,9 @@ res = []
 a = int(input())
 for i in range(a):
     b = int(input())
+    res2 = []
     for j in range(b):
-        ind = input().split()
-
-print(res)
+        tim = input().split()
+        res2.append(tim)
+    res.append(res2)
+print('YES' if all(any(i[1] == '5') for i in res) else 'NO')
