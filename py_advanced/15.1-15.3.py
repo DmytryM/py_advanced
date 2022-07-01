@@ -620,4 +620,4 @@ for i in range(a):
         tim = input().split()
         res2.append(tim)
     res.append(res2)
-print('YES' if all(any(i[1] == '5') for i in res) else 'NO')
+print('YES' if all(map(lambda x: any(map(lambda y: y[1] == '5', x)), res)) else 'NO')
