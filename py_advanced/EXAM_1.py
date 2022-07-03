@@ -57,3 +57,21 @@
 
 
 # ---------------------------6---------------------------
+
+# n = int(input())
+#
+# matrix = [[int(j) for j in input().split()] for _ in range(n)]
+# flag = True
+# for i in matrix:
+#     if sorted(i) != list(range(1, n + 1)):
+#         flag = False
+# matrix_t = [[matrix[j][i] for j in range(n)] for i in range(n)]
+# for i in matrix_t:
+#     if sorted(i) != list(range(1, n + 1)):
+#         flag = False
+# print('YES' if flag else 'NO')
+
+# ---------------------------7---------------------------
+
+
+
