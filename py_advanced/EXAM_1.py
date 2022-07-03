@@ -73,5 +73,26 @@
 
 # ---------------------------7---------------------------
 
+# place = input()
+# matrix = [['.' for _ in range(8)] for _ in range(8)]
+# letters = {'a': 0, 'b': 1, 'c': 2, 'd': 3, 'e': 4, 'f': 5, 'g': 6, 'h': 7}
+# nums = {'1': 7, '2': 6, '3': 5, '4': 4, '5': 3, '6': 2, '7': 1, '8': 0}
+# x = nums[place[1]]
+# y = letters[place[0]]
+# for i in range(8):
+#     for j in range(8):
+#         if i == x or j == y or abs(y - j) == abs(x - i):
+#             matrix[i][j] = '*'
+# matrix[nums[place[1]]][letters[place[0]]] = 'Q'
+# [print(*res) for res in matrix]
 
+# ---------------------------8---------------------------
+
+a = int(input())
+matrix = [[0 for _ in range(a)] for _ in range(a)]
+iteration = 0
+for i in range(a):
+    for j in range(a):
+        matrix[i][j] = abs(i - j)
+[print(*res) for res in matrix]
 
